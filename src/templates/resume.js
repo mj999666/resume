@@ -133,7 +133,7 @@ export default (data) => {
 
 
 
-                        <div className="px-10 d-none">
+                        {/*<div className="px-10 d-none">
                             <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
                                 <h3 className="p-4 text-2xl">Education</h3>
                                 <article className="py-4 pl-4" >
@@ -160,7 +160,7 @@ export default (data) => {
                                     </ul>
                                 </article>
                             </div>
-                        </div>
+                        </div>*/}
                         <div className="px-10">
                             <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
                                 <h3 className="p-4 text-2xl">Languages</h3>
@@ -184,7 +184,7 @@ export default (data) => {
     );
 };
 
-export const Head = () => <title>Resume Mojtaba Akbarpour Khomami</title>;
+export const Head = () => <title>Mojtaba Akbarpour Khomami</title>;
 
 export const query = graphql`
     query ($slug: String!) {
