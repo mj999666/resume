@@ -8,4 +8,4 @@ export default () => {
     return <></>;
 };
 
-export const Head = () => <title>Mojtaba Akbarpour</title>;
+export const Head = () => <title>Mojtaba Akbarpour Khomami</title>;
