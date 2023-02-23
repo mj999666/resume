@@ -77,45 +77,106 @@ export default (data) => {
                                 <p className="px-4 text-sm pb-4 text-justify">{resume.about}</p>
                             </div>
                         </div>
+
+
+
                         <div className="px-10">
                             <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
-                                <h3 className="p-4 text-2xl">Experiences</h3>
-                                {resume.experiences.map((item, index) => (
+                                <h3 className="p-4 text-2xl">Work Experience:</h3>
+                                {resume.workExperience.map((item, index) => (
                                     <article className="py-4" key={index}>
                                         <ul className="dot-margin list-disc list-inside text-sm align-top font-sans">
                                             <li className="py-1 px-5">
-                                                <a href={item.url} dangerouslySetInnerHTML={{ __html: item.title }}></a>
-                                                <p className="text-justify">{item.description}</p>
-                                                <ul>
-                                                    {item.responsibilities.map((item, index) => (
-                                                        <li
-                                                            className="py-1 px-5 text-justify"
-                                                            key={index}
-                                                            dangerouslySetInnerHTML={{ __html: item }}
-                                                        ></li>
-                                                    ))}
-                                                </ul>
-                                                {item.technologies && (
-                                                    <>
-                                                        <h6 className="text-xs">
-                                                            <b>Technologies I used</b>
-                                                        </h6>
-                                                        <div className="flex flex-row justify-around text-xs">
-                                                            {item.technologies.map((item, index) => (
-                                                                <span
-                                                                    key={index}
-                                                                    dangerouslySetInnerHTML={{ __html: item }}
-                                                                ></span>
-                                                            ))}
-                                                        </div>
-                                                    </>
-                                                )}
+                                                {item.workAs}
+                                                <div className="pl-5">
+                                                    <p><a href={item.url} dangerouslySetInnerHTML={{ __html: item.nameOfCompany }}></a>, {item.companyLocation}</p>
+                                                    <p>{item.durationOfEmployment}}</p>
+                                                    <p className="text-justify">{item.description}</p>
+                                                    <h3 className="pt-3 pb-3"><strong>Responsibilities:</strong></h3>
+                                                    <ul className="dot-margin list-disc list-inside text-sm align-top font-sans">
+                                                        {item.responsibilities.map((item, index) => (
+                                                            <li
+                                                                className="py-1 px-5 text-justify"
+                                                                key={index}
+                                                                dangerouslySetInnerHTML={{ __html: item }}
+                                                            ></li>
+                                                        ))}
+                                                    </ul>
+                                                </div>
                                             </li>
+
                                         </ul>
                                     </article>
                                 ))}
                             </div>
                         </div>
+
+
+                        <div className="px-10">
+                            <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
+                                <h3 className="p-4 text-2xl">Projects:</h3>
+                                <article className="py-4" >
+                                    <ul className="dot-margin list-disc list-inside text-sm align-top font-sans">
+                                        {resume.projects.map((item, index) => (
+                                            <li className="py-1 px-5" key={index}>
+                                                <a href={item.url} dangerouslySetInnerHTML={{ __html: item.title }}></a> (Link: {item.url})
+                                                <div className="pl-5">
+                                                    {item.description}
+                                                </div>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <article className="border-t pt-3 mt-3 pl-5 font-sans" dangerouslySetInnerHTML={{ __html: resume.otherProjects }}></article>
+                                </article>
+                            </div>
+                        </div>
+
+
+
+                        <div className="px-10 d-none">
+                            <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
+                                <h3 className="p-4 text-2xl">Education</h3>
+                                <article className="py-4 pl-4" >
+                                    <ul className="dot-margin list-disc list-inside text-sm align-top font-sans">
+                                        {resume.educations.map((item, index) => (
+                                            <li className="py-4" key={index}>
+                                                {item.degree} - ({item.universityName} ({item.location}) {item.graduationDate})
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                        <div className="px-10">
+                            <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
+                                <h3 className="p-4 text-2xl">Certifications</h3>
+                                <article className="py-4 pl-4" >
+                                    <ul className="dot-margin list-disc list-inside text-sm align-top font-sans">
+                                        {resume.certifications.map((item, index) => (
+                                            <li className="py-4" key={index}>
+                                                {item.title}, {item.certificationAuthority}, {item.date}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                        <div className="px-10">
+                            <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
+                                <h3 className="p-4 text-2xl">Languages</h3>
+                                <article className="py-4 pl-4" >
+                                    <ul className="dot-margin list-disc list-inside text-sm align-top font-sans">
+                                        {resume.languages.map((item, index) => (
+                                            <li className="py-4" key={index}>
+                                                {item.title}: {item.level}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+
+
                     </div>
                 </main>
             </Layout>
@@ -123,7 +184,7 @@ export default (data) => {
     );
 };
 
-export const Head = () => <title>Resume Mohammad Javad Ghasemy</title>;
+export const Head = () => <title>Resume Mojtaba Akbarpour Khomami</title>;
 
 export const query = graphql`
     query ($slug: String!) {
@@ -141,13 +202,36 @@ export const query = graphql`
                 link
             }
             skills
-            about
-            experiences {
-                title
+            about 
+            workExperience{
+                workAs
+                nameOfCompany
+                companyLocation
+                durationOfEmployment
                 url
                 description
                 responsibilities
-                technologies
+            }
+            projects {
+                title
+                description
+                url
+            }
+            otherProjects
+            educations {
+                degree
+                universityName
+                location
+                graduationDate
+            }
+            certifications {
+                title
+                certificationAuthority
+                date
+            }
+            languages {
+                title
+                level
             }
         }
     }

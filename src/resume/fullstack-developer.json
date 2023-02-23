@@ -79,5 +79,13 @@
                 "Contributed to the <a href=\"https://gitlab.com/payzos\">Payzos</a> project, a blockchain-based payment system for the Tezos network and e-commerce platforms such as WordPress, Magento, OpenCart, and PrestaShop. Used PHP, React, and the Tezos API to create plugins for WordPress, Magento, OpenCart, and PrestaShop using PHP and HTML."
             ]
         }
+    ],
+    "education" : [
+        {
+            "degree" : "Master's degree in Computer Science",
+            "universityName" : "University Name",
+            "location" : "Location",
+            "graduationDate" : "Graduation Date"
+        }
     ]
 }
