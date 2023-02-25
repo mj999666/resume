@@ -1,9 +1,0 @@
-{
-  "proseWrap": "never",
-  "printWidth": 100,
-  "tabWidth": 4,
-  "useTabs": false,
-  "semi": true,
-  "quoteProps": "consistent",
-  "endOfLine": "lf"
-}

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkresume_mohammad_javad_ghasemy=self.webpackChunkresume_mohammad_javad_ghasemy||[]).push([[678],{6558:function(e,a,n){n.r(a),n.d(a,{Head:function(){return u}});var t=n(7294),m=n(1883);a.default=()=>("undefined"!=typeof window&&(0,m.navigate)("/backend-developer"),t.createElement(t.Fragment,null));const u=()=>t.createElement("title",null,"Mojtaba Akbarpour Khomami")}}]);
+//# sourceMappingURL=component---src-pages-index-js-a9ae10313ca83b49a3a5.js.map
