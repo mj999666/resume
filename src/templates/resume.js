@@ -33,9 +33,9 @@ export default (data) => {
                 </header>
                 <main className="flex max-w-screen-xl mx-auto flex-wrap">
                     <div className="sidebar">
-                        <div className="flex justify-center p-5">
+                        {/*<div className="flex justify-center p-5">
                             <img src={avatar} className="aspect-square" />
-                        </div>
+                        </div>*/}
                         <div className="px-10">
                             <div className="mx-auto border-l-2 border-black border-opacity-70 my-1">
                                 <h3 className="p-4 text-2xl">Contact</h3>
