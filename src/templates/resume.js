@@ -130,9 +130,6 @@ export default (data) => {
                                 </article>
                             </div>
                         </div>
-
-
-
                         {/*<div className="px-10 d-none">
                             <div className="mx-auto border-l-2 border-black border-opacity-70 my-7">
                                 <h3 className="p-4 text-2xl">Education</h3>
