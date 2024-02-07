@@ -199,6 +199,7 @@ export const query = graphql`
                 title
                 name
                 link
+                value
             }
             skills
             projects {
