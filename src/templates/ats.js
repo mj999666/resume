@@ -84,6 +84,10 @@ export const query = graphql`
                 title
                 url
             }
+            complexSkills{
+                title
+                description
+            }
         }
     }
 `;

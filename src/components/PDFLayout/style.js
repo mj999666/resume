@@ -72,12 +72,27 @@ export default StyleSheet.create({
         marginBottom: 3,
         fontFamily: "Rubik",
     },
+    roleSubTitle2: {
+        fontSize: 9,
+        fontWeight: "bold",
+        marginBottom: 3,
+        fontFamily: "Rubik",
+        display: "inline !important",
+    },
     text: {
         fontSize: 9,
         marginBottom: 3,
         textAlign: "justify",
         fontFamily: "OpenSans",
         lineHeight: "1.7",
+    },
+    text2: {
+        fontSize: 9,
+        marginBottom: 3,
+        textAlign: "justify",
+        fontFamily: "OpenSans",
+        lineHeight: "1.7",
+        display: "inline !important",
     },
     socialTitleText: {
         fontSize: 9,

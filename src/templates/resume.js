@@ -76,8 +76,7 @@ export default (data) => {
                                 <h3 className="p-4 text-2xl">Skills</h3>
                                 <ul className="dot-margin list-disc list-inside text-sm align-top font-sans">
                                     {resume.skills.map((item, index) => (
-                                        <li key={index} className="py-1 px-5">
-                                            {item}
+                                        <li key={index} className="py-1 px-5" dangerouslySetInnerHTML={{ __html: item }}>
                                         </li>
                                     ))}
                                 </ul>
@@ -241,6 +240,10 @@ export const query = graphql`
             complexEducations{
                 title
                 url
+            }
+            complexSkills{
+                title
+                description
             }
         }
     }

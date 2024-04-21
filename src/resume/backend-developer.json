@@ -1,7 +1,7 @@
 {
     "slug": "backend-developer",
     "name": "Mojtaba Akbarpour Khomami",
-    "title": "Backend Developer",
+    "title": "Senior Web Developer",
     "contact": [
         {
             "name": "email",
@@ -40,14 +40,63 @@
         }
     ],
     "skills": [
-        "Proficient in PHP",
-        "Efficient learner",
-        "Skilled in Laravel framework",
-        "Team player and leadership",
-        "Experienced in MySQL and DBMS.",
-        "Familiar with agile and Scrum",
-        "Experienced in front-end and technologies",
-        "Teaching and Mentorship"
+        "<b>Dynamic Programing Languages: </b> PHP, JavaScript",
+        "<b>Creational Design Patterns: </b> Abstract Factory, Builder, Factory Method, Prototype, Singleton",
+        "<b>Structural Design Patterns: </b> Adapter, Decorator, Facade",
+        "<b>Agile Methodologies: </b> Scrum",
+        "<b>SQL Databases: </b> MySQL",
+        "<b>PHP Frameworks: </b> Laravel",
+        "<b>JavaScript Libraries: </b> jQuery",
+        "<b>Test driven development: </b> PHPUnit",
+        "<b>Web servers: </b> NGINX, Apache",
+        "<b>Project and Team Management Tools: </b> JIRA, Trello",
+        "<b>Git: </b> GitHub, GitLab"
+    ],
+    "complexSkills": [
+        {
+            "title": "Dynamic Programing Languages: ",
+            "description": "PHP, JavaScript"
+        },
+        {
+            "title": "Creational Design Patterns: ",
+            "description": "Abstract Factory, Builder, Factory Method, Prototype, Singleton"
+        },
+        {
+            "title": "Structural Design Patterns: ",
+            "description": "Adapter, Decorator, Facade"
+        },
+        {
+            "title": "Agile Methodologies: ",
+            "description": "Scrum"
+        },
+        {
+            "title": "SQL Databases: ",
+            "description": "MySQL"
+        },
+        {
+            "title": "PHP Frameworks: ",
+            "description": "Laravel"
+        },
+        {
+            "title": "JavaScript Libraries: ",
+            "description": "jQuery"
+        },
+        {
+            "title": "Test driven development: ",
+            "description": "PHPUnit"
+        },
+        {
+            "title": "Web servers: ",
+            "description": "NGINX, Apache"
+        },
+        {
+            "title": "Project and Team Management Tools: ",
+            "description": "JIRA, Trello"
+        },
+        {
+            "title": "Git: ",
+            "description": "GitHub, GitLab"
+        }
     ],
     "projects": [
         {
@@ -95,7 +144,7 @@
 
     ],
 
-    "about": "Experienced in PHP and Laravel for backend development and database management. Specialize in e-commerce solutions including product management and shipping. Effective in mentoring juniors and teamwork.",
+    "about": "(Mojtaba Akbarpour) [ born 1 OCT 1988 ] Experienced over 10 years as Developer in agile environment, object oriented development, implementation web application, web services, database management, specialize in e-commerce solutions. Keen learner and problem solver Main Profession is PHP Developer, Experienced in PHP's Framework, Design Pattern's, SOLIDITY",
 
     "experiences": [
         {
@@ -147,16 +196,30 @@
     "workExperience" : [
         {
             "workType": "onsite",
-            "workAs" : "Fullstack Developer",
+            "workAs" : "Senior Web Developer",
             "nameOfCompany" : "Shahrara" ,
             "companyLocation" : "Rasht, Gilan, Iran" ,
             "durationOfEmployment": "(2015 | Present)",
             "url": "https://shahrara.net",
             "description": "Shahrara Company is an active company in creating smart and creative solutions in the digital world.",
             "responsibilities" : [
-                "<strong>PHP  developer (2015-2017):</strong> I joined Shahrara Company as a PHP Developer and, right from the start, focused on enhancing my skills through engaging in new and creative positions alongside various projects.",
-                "<strong>PHP Senior developer (2017-2021):</strong> After advancing my skills, I transitioned to a Senior Developer role, leading the programming team. Alongside, I actively contributed to generating creative solutions for problem-solving.",
-                "<strong>Team leader (2021-Present):</strong> As a team leader, I excel in project planning, task delegation, and performance assessment. With a decade's experience, I lead teams in adhering to development standards, ensuring code quality, and fostering technical and teamwork skills. I am dedicated to enhancing team coordination, improving project productivity, and facilitating software development processes for optimal results."
+                "Redesign structure of older project.",
+                "Had ideas and solutions to resolve problems and manage the projects.",
+                "Share knowledge and run versions control system (Git) in team.",
+                "Create structure and standard for development and share with new developers.",
+                "Design software, fellows and specifying target users.",
+                "Improve software qualities.",
+                "Schedule for roadmap of applications.",
+                "Detecting bottlenecks of applications.",
+                "Resolving customer’s and product owner’s reports.",
+                "Research about new opportunities.",
+                "Find best way to create a MVP of product and startup ideas.",
+                "Manage team’s tasks.",
+                "Estimating the time, it will take to implement any software.",
+                "Support projects reports from customers and be available for resolving on critical time.",
+                "Designing solutions to problematic programing.",
+                "Search and learn about new technologies and frameworks.",
+                "Redesign and develop some application."
             ],
             "complexResponsibilities": [
                 {
@@ -173,25 +236,6 @@
                 }
             ],
             "technologies": ["PHP", "Laravel", "MySQL", "HTML", "CSS", "JavaScript", "Reactjs"]
-        },
-        {
-            "workType": "remote",
-            "workAs" : "PHP Developer",
-            "nameOfCompany" : "Castel Game" ,
-            "companyLocation" : "" ,
-            "durationOfEmployment": "(2023 | 2024)",
-            "url": "https://castelgame.com",
-            "description": "MMORTS BlockChain Based Game.",
-            "responsibilities" : [
-                "<strong>PHP developer</strong> as member with other 7 team members, i was responsible to build Api's and structure high demand Services like War and Building systems."
-            ],
-            "complexResponsibilities": [
-                {
-                    "title": "PHP developer",
-                    "description": "Part of a 7-member team, responsible for building APIs and structuring high-demand services like War and Building systems in PHP."
-                }
-            ],
-            "technologies": ["PHP", "Laravel", "MySQL", "Git", "Redis", "React"]
         }
     ]
 }

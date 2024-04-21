@@ -11,6 +11,8 @@ import SideBarItems2 from "./Components/SideBarItems2";
 import Projects from "./Components/Projects";
 import Projects2 from "./Components/Projects2";
 import WorkExperience2 from "./Components/WorkExperience2";
+import SideBarItems3 from "./Components/SideBarItems3";
+import WorkExperience3 from "./Components/WorkExperience3";
 
 export default ({ resume }) => {
     const styles = style;
@@ -35,16 +37,19 @@ export default ({ resume }) => {
                     <View style={styles.section}>
                         <Text style={styles.title}>Experiences</Text>
                         {resume.workExperience.map((experience) => (
-                            <WorkExperience2 WorkExperience={experience} />
+                            <WorkExperience3 WorkExperience={experience} />
                         ))}
                     </View>
-                    <View style={styles.section}>
+                    {/*<View style={styles.section}>
                         <Projects2 items={resume.projects} otherProjects={resume.simpleOtherProjects}/>
+                    </View>*/}
+                    <View style={styles.section}>
+                        <SideBarItems3 items={resume.complexSkills} title="Skills" />
                     </View>
                 </View>
 
                 <View style={styles.rightColumn}>
-                    <SideBarItems items={resume.skills} title="Skills" />
+                    {/*<SideBarItems3 items={resume.complexSkills} title="Skills" />*/}
 
                     <Contact items={[...resume.contact, ...resume.social]} />
                     <SideBarItems items={resume.languages} title="Languages" />
