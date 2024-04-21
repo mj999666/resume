@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkresume=self.webpackChunkresume||[]).push([[316],{1438:function(e,t,u){u.r(t),u.d(t,{Head:function(){return a}});var n=u(7294),r=u(1630),s=u(7241);t.default=e=>{const[t,u]=n.useState(!1);n.useEffect((()=>{u(!0)}),[]);const a=e.data.resumeJson;return n.createElement("div",null,t&&n.createElement(s.PDFViewer,{className:"w-full h-screen"},n.createElement(r.Z,{resume:a})))};const a=()=>n.createElement("title",null,"Resume Mojtaba Akbarpour Khomami")}}]);
-//# sourceMappingURL=component---src-templates-ats-js-e53966358885166b056e.js.map
